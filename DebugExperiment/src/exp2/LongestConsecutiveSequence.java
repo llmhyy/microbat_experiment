@@ -14,7 +14,7 @@ public class LongestConsecutiveSequence {
 		int recordedMaxLength = 0;
 		
 		/** 
-		 * record the <code>k</code>th element in <code>nums</code> belonging 
+		 * record the element with value <code>k</code> in <code>nums</code> belonging 
 		 * to a sequence of length <code>l</code>
 		 */
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
