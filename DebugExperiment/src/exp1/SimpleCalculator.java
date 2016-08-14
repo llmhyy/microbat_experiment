@@ -115,11 +115,11 @@ public class SimpleCalculator {
 		return operatorList.toArray(new String[0]);
 	}
 
-	public static void main(String[] args) {
-		SimpleCalculator calculator = new SimpleCalculator();
-		String expression = "3+((2-1)+2)";
-		int value = calculator.calculate(expression);
-		System.out.println(value==6);
-	}
+//	public static void main(String[] args) {
+//		SimpleCalculator calculator = new SimpleCalculator();
+//		String expression = "3+((2-1)+2)";
+//		int value = calculator.calculate(expression);
+//		System.out.println(value==6);
+//	}
 
 }

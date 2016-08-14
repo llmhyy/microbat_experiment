@@ -63,12 +63,12 @@ public class SearchInRotatedSortedArray {
 		return -1;
 	}
 	
-	public static void main(String[] args){
-		int[] nums = {3,4,5,6,7,8,9,0,1,2};
-		int target = 9;
-		
-		int actual = new SearchInRotatedSortedArray().search(nums, target);
-		int expected = 6;
-		System.out.println(expected == actual);
-	}
+//	public static void main(String[] args){
+//		int[] nums = {3,4,5,6,7,8,9,0,1,2};
+//		int target = 9;
+//		
+//		int actual = new SearchInRotatedSortedArray().search(nums, target);
+//		int expected = 6;
+//		System.out.println(expected == actual);
+//	}
 }

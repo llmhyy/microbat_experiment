@@ -45,10 +45,10 @@ public class LongestConsecutiveSequence {
 		return recordedMaxLength;
 	}
 	
-	public static void main(String[] args){
-		LongestConsecutiveSequence longestConsecutiveSequence = new LongestConsecutiveSequence();
-        int num[] = {100, 99, 1, 2, 3, 5, 7, 11, 4, 102, 101};
-        int length = longestConsecutiveSequence.longestConsecutive(num);
-        System.out.println(length==5);
-	}
+//	public static void main(String[] args){
+//		LongestConsecutiveSequence longestConsecutiveSequence = new LongestConsecutiveSequence();
+//        int num[] = {100, 99, 1, 2, 3, 5, 7, 11, 4, 102, 101};
+//        int length = longestConsecutiveSequence.longestConsecutive(num);
+//        System.out.println(length==5);
+//	}
 }
