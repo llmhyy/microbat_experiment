@@ -5,23 +5,22 @@ public class DataRaces {
         UseCounter c = new UseCounter();
         Thread t1 = new Thread(c);
         Thread t2 = new Thread(c);
-//        Thread t3 = new Thread(c);
         t1.start();
         t2.start();
-//        t3.start();
 
-        Counter.count = 0;
+        Counter.count = 100;
 
     }
 }
 class Counter {
-    public static long count = 0;
+    public static int count = 1;
 }
 
 class UseCounter implements Runnable {    
     public static void increment() {
-        Counter.count++;
-        System.out.print(Counter.count + " ");
+    	int a= 2;
+    	a=a+Counter.count;
+        System.out.print(a + " ");
     }    
     public void run() {
         increment();
