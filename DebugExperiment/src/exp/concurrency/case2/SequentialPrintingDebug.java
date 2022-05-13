@@ -11,9 +11,29 @@ package exp.concurrency.case2;
 public class SequentialPrintingDebug {
 	
     public static void main(String[] args) {
-        SequentialPrinting printABC = new SequentialPrinting(1);
-        new Thread(printABC::printA).start();
-        new Thread(printABC::printB).start();
-        new Thread(printABC::printC).start();
+        final SequentialPrinting printABC = new SequentialPrinting(1);
+        new Thread(new Runnable() {
+			@Override
+			public void run() {
+				printABC.printA();
+			}
+        	
+        }).start();
+        
+        new Thread(new Runnable() {
+			@Override
+			public void run() {
+				printABC.printB();
+			}
+        	
+        }).start();
+        
+        new Thread(new Runnable() {
+			@Override
+			public void run() {
+				printABC.printB();
+			}
+        	
+        }).start();
     }
 }
